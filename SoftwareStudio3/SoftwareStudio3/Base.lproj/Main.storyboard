@@ -57,10 +57,10 @@
             </objects>
             <point key="canvasLocation" x="138" y="786"/>
         </scene>
-        <!--View Controller-->
+        <!--Heart Page-->
         <scene sceneID="5QH-VW-Qo7">
             <objects>
-                <viewController id="tfm-m8-L2s" sceneMemberID="viewController">
+                <viewController id="tfm-m8-L2s" customClass="heartPage" customModule="SoftwareStudio3" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="J7V-wt-efJ">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -75,10 +75,10 @@
             </objects>
             <point key="canvasLocation" x="1835" y="370"/>
         </scene>
-        <!--View Controller-->
+        <!--Chart Page-->
         <scene sceneID="14m-VT-mfM">
             <objects>
-                <viewController id="aNO-65-qRJ" sceneMemberID="viewController">
+                <viewController id="aNO-65-qRJ" customClass="chartPage" customModule="SoftwareStudio3" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="UE1-5q-FMe">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -91,10 +91,10 @@
             </objects>
             <point key="canvasLocation" x="1835" y="1142"/>
         </scene>
-        <!--View Controller-->
+        <!--Home Page-->
         <scene sceneID="ybe-uU-4ca">
             <objects>
-                <viewController id="Qkc-JX-myW" sceneMemberID="viewController">
+                <viewController id="Qkc-JX-myW" customClass="HomePage" customModule="SoftwareStudio3" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="83b-U8-J6z">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -128,10 +128,10 @@
             </objects>
             <point key="canvasLocation" x="930" y="612"/>
         </scene>
-        <!--View Controller-->
+        <!--Person Page-->
         <scene sceneID="W0p-bL-YTq">
             <objects>
-                <viewController id="v3a-tO-7Hy" sceneMemberID="viewController">
+                <viewController id="v3a-tO-7Hy" customClass="personPage" customModule="SoftwareStudio3" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="grc-xA-jP5">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
