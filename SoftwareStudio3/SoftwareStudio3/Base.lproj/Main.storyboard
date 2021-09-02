@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="c4t-z5-3cy">
     <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
@@ -144,12 +144,170 @@
             </objects>
             <point key="canvasLocation" x="930" y="1388"/>
         </scene>
+        <!--Work Out Selection-->
+        <scene sceneID="sDb-C0-R50">
+            <objects>
+                <viewController id="c4t-z5-3cy" customClass="WorkOutSelection" customModule="SoftwareStudio3" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="nTl-qB-umw">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Workout" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TaG-W1-jwM">
+                                <rect key="frame" x="16" y="44" width="213" height="41"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="213" id="hzK-XC-Mfd"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="34"/>
+                                <color key="textColor" red="0.38895371553317892" green="0.46393093375038252" blue="0.80995315313339233" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" keyboardDismissMode="interactive" text="What exercise would you like to work on today?" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="fRB-5O-dtW">
+                                <rect key="frame" x="16" y="93" width="358" height="79"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="79" id="K6d-Qh-o9Z"/>
+                                </constraints>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5SA-iH-2z4">
+                                <rect key="frame" x="339" y="51" width="35" height="34"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal">
+                                    <imageReference key="image" image="gearshape.fill" catalog="system" symbolScale="large"/>
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="23"/>
+                                </state>
+                            </button>
+                            <searchBar contentMode="redraw" searchBarStyle="minimal" placeholder="Search Workout..." translatesAutoresizingMaskIntoConstraints="NO" id="TPj-t1-uRP">
+                                <rect key="frame" x="0.0" y="172" width="390" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="YZC-DH-TuN"/>
+                                </constraints>
+                                <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES"/>
+                            </searchBar>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2nY-DY-gK4">
+                                <rect key="frame" x="0.0" y="216" width="390" height="628"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Q8R-UX-OZN">
+                                        <rect key="frame" x="0.0" y="0.0" width="390" height="1000"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Recent Workout:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HsI-2A-ejq">
+                                                <rect key="frame" x="8" y="8" width="197" height="43"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rsp-Ay-1WE">
+                                                <rect key="frame" x="8" y="53" width="374" height="105"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" red="0.87887398534457528" green="0.85020753556310802" blue="1" alpha="0.6532325997257864" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="33"/>
+                                                <state key="normal" title="  Running" image="Group 1">
+                                                    <color key="titleColor" red="0.38895371550000002" green="0.4639309338" blue="0.80995315310000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                </state>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XNQ-dS-OdE">
+                                                <rect key="frame" x="8" y="178" width="374" height="105"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" red="0.87887398530000005" green="0.85020753559999995" blue="1" alpha="0.65323259970000003" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="33"/>
+                                                <state key="normal" title="  Running" image="Group 1">
+                                                    <color key="titleColor" red="0.38895371550000002" green="0.4639309338" blue="0.80995315310000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                </state>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aID-Q2-4Em">
+                                                <rect key="frame" x="8" y="291" width="374" height="105"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" red="0.87887398530000005" green="0.85020753559999995" blue="1" alpha="0.65323259970000003" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="33"/>
+                                                <state key="normal" title="Pushups" image="pushup (1) 1">
+                                                    <color key="titleColor" red="0.38895371550000002" green="0.4639309338" blue="0.80995315310000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                </state>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Em2-D1-mI2">
+                                                <rect key="frame" x="8" y="404" width="374" height="105"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" red="0.87887398530000005" green="0.85020753559999995" blue="1" alpha="0.65323259970000003" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="33"/>
+                                                <state key="normal" title="   Crunshes" image="Group 3">
+                                                    <color key="titleColor" red="0.38895371550000002" green="0.4639309338" blue="0.80995315310000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                </state>
+                                            </button>
+                                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qHt-yQ-RpF">
+                                                <rect key="frame" x="8" y="166" width="374" height="4"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </progressView>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cuA-FS-KqY">
+                                                <rect key="frame" x="8" y="517" width="374" height="105"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" red="0.87887398530000005" green="0.85020753559999995" blue="1" alpha="0.65323259970000003" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="33"/>
+                                                <state key="normal" title="            Pullups" image="Group 2">
+                                                    <color key="titleColor" red="0.38895371550000002" green="0.4639309338" blue="0.80995315310000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                </state>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.94828014449999998" green="0.95176882679999997" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="1000" id="G4c-w6-whQ"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="Q8R-UX-OZN" secondAttribute="bottom" id="5Vo-ir-aOd"/>
+                                    <constraint firstAttribute="trailing" secondItem="Q8R-UX-OZN" secondAttribute="trailing" id="SGt-u0-qh4"/>
+                                    <constraint firstItem="Q8R-UX-OZN" firstAttribute="top" secondItem="2nY-DY-gK4" secondAttribute="top" id="jnu-ZJ-mU5"/>
+                                    <constraint firstItem="Q8R-UX-OZN" firstAttribute="leading" secondItem="2nY-DY-gK4" secondAttribute="leading" id="vJJ-Kz-dL8"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="21i-dK-Koc"/>
+                        <color key="backgroundColor" red="0.94828014447328368" green="0.9517688268269443" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="tintColor" red="0.0" green="0.2880759265511818" blue="0.80995315313339233" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="TPj-t1-uRP" firstAttribute="leading" secondItem="21i-dK-Koc" secondAttribute="leading" id="1BL-j9-XHM"/>
+                            <constraint firstItem="5SA-iH-2z4" firstAttribute="trailing" secondItem="fRB-5O-dtW" secondAttribute="trailing" id="B4l-HN-hFI"/>
+                            <constraint firstItem="2nY-DY-gK4" firstAttribute="trailing" secondItem="21i-dK-Koc" secondAttribute="trailing" id="DCP-Pg-VGM"/>
+                            <constraint firstItem="TPj-t1-uRP" firstAttribute="trailing" secondItem="21i-dK-Koc" secondAttribute="trailing" id="EJ5-sw-QmM"/>
+                            <constraint firstItem="TaG-W1-jwM" firstAttribute="top" secondItem="21i-dK-Koc" secondAttribute="top" id="G7B-bf-Fch"/>
+                            <constraint firstItem="Q8R-UX-OZN" firstAttribute="width" secondItem="nTl-qB-umw" secondAttribute="width" id="Lju-ic-RUd"/>
+                            <constraint firstItem="TaG-W1-jwM" firstAttribute="leading" secondItem="fRB-5O-dtW" secondAttribute="leading" id="VyR-ZH-Jk1"/>
+                            <constraint firstItem="TPj-t1-uRP" firstAttribute="top" secondItem="fRB-5O-dtW" secondAttribute="bottom" id="f4j-gS-zLz"/>
+                            <constraint firstItem="2nY-DY-gK4" firstAttribute="top" secondItem="TPj-t1-uRP" secondAttribute="bottom" id="fA9-6D-KtT"/>
+                            <constraint firstItem="fRB-5O-dtW" firstAttribute="top" secondItem="TaG-W1-jwM" secondAttribute="bottom" constant="8" id="gCC-bw-v2z"/>
+                            <constraint firstItem="2nY-DY-gK4" firstAttribute="leading" secondItem="21i-dK-Koc" secondAttribute="leading" id="h8x-Km-s0Q"/>
+                            <constraint firstItem="TaG-W1-jwM" firstAttribute="leading" secondItem="nTl-qB-umw" secondAttribute="leadingMargin" id="k6X-g6-ycy"/>
+                            <constraint firstItem="fRB-5O-dtW" firstAttribute="centerX" secondItem="TPj-t1-uRP" secondAttribute="centerX" id="sGk-8T-DG5"/>
+                            <constraint firstAttribute="bottom" secondItem="2nY-DY-gK4" secondAttribute="bottom" id="uph-5S-4MD"/>
+                            <constraint firstItem="TaG-W1-jwM" firstAttribute="bottom" secondItem="5SA-iH-2z4" secondAttribute="bottom" id="wtf-IJ-xpt"/>
+                        </constraints>
+                    </view>
+                    <value key="contentSizeForViewInPopover" type="size" width="390" height="1000"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <connections>
+                        <outlet property="crunchesOutlet" destination="cuA-FS-KqY" id="1OZ-Al-sFK"/>
+                        <outlet property="mostRecentworkout" destination="rsp-Ay-1WE" id="hQT-dd-p8j"/>
+                        <outlet property="pullUpsOutlet" destination="Em2-D1-mI2" id="iaC-9Z-R8C"/>
+                        <outlet property="pushupOutlet" destination="aID-Q2-4Em" id="QVa-P3-vYY"/>
+                        <outlet property="runningOutlet" destination="XNQ-dS-OdE" id="JNJ-PD-dcw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qRz-cL-b2d" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="927.69230769230762" y="-428.67298578199052"/>
+        </scene>
     </scenes>
     <resources>
+        <image name="Group 1" width="142" height="145"/>
+        <image name="Group 2" width="63" height="180"/>
+        <image name="Group 3" width="152" height="89"/>
         <image name="chart.pie" catalog="system" width="128" height="121"/>
+        <image name="gearshape.fill" catalog="system" width="128" height="121"/>
         <image name="heart" catalog="system" width="128" height="109"/>
         <image name="house.fill" catalog="system" width="128" height="106"/>
         <image name="person" catalog="system" width="128" height="117"/>
+        <image name="pushup (1) 1" width="159" height="104"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F00A6A4A26DF94470054EF1B /* WorkOutSelection.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00A6A4926DF94470054EF1B /* WorkOutSelection.swift */; };
 		F088C70F26D509D100010619 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F088C70E26D509D100010619 /* AppDelegate.swift */; };
 		F088C71126D509D100010619 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F088C71026D509D100010619 /* SceneDelegate.swift */; };
 		F088C71326D509D100010619 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F088C71226D509D100010619 /* ViewController.swift */; };
@@ -22,6 +23,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F00A6A4926DF94470054EF1B /* WorkOutSelection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkOutSelection.swift; sourceTree = "<group>"; };
 		F088C70B26D509D100010619 /* SoftwareStudio3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SoftwareStudio3.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F088C70E26D509D100010619 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F088C71026D509D100010619 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -97,6 +99,7 @@
 				F088C72A26D513E300010619 /* heartPage.swift */,
 				F088C72C26D5140100010619 /* chartPage.swift */,
 				F088C72E26D5141500010619 /* personPage.swift */,
+				F00A6A4926DF94470054EF1B /* WorkOutSelection.swift */,
 			);
 			path = TabViewPages;
 			sourceTree = "<group>";
@@ -173,6 +176,7 @@
 			files = (
 				F088C72F26D5141500010619 /* personPage.swift in Sources */,
 				F088C71326D509D100010619 /* ViewController.swift in Sources */,
+				F00A6A4A26DF94470054EF1B /* WorkOutSelection.swift in Sources */,
 				F088C72D26D5140100010619 /* chartPage.swift in Sources */,
 				F088C72926D5134D00010619 /* HomePage.swift in Sources */,
 				F088C70F26D509D100010619 /* AppDelegate.swift in Sources */,
