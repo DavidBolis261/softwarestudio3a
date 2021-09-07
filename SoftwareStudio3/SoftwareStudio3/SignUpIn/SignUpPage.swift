@@ -9,21 +9,34 @@ import UIKit
 
 class SignUpPage: UIViewController {
 
-    override func viewDidLoad() {
+	@IBOutlet var fullname: UITextField!
+	@IBOutlet var email: UITextField!
+	@IBOutlet var password: UITextField!
+	@IBOutlet var age: UITextField!
+	@IBOutlet var weight: UITextField!
+	@IBOutlet var height: UITextField!
+	
+	@IBOutlet var signupButton: UIButton!
+	
+	override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
+	
+	
+	@IBAction func signupTapped(_ sender: Any) {
+	}
+	//
+//	@IBAction func signupTapped(_ sender: Any) {
+//		let storyboard = UIStoryboard(name: "Main", bundle: nil)
+//		let vc = storyboard.instantiateViewController(withIdentifier: "homePage")
+//		vc.modalPresentationStyle = .overFullScreen
+//		present(vc, animated: true)
+//	}
 
 }
+
+//extension SignUpPage : UITextFieldDelegate {
+//	func textField.resignFirstResponder()
+
