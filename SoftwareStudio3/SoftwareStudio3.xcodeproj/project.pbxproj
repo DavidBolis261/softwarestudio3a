@@ -91,6 +91,7 @@
 			);
 			path = SignUpIn;
 			sourceTree = "<group>";
+			usesTabs = 1;
 		};
 		F088C72726D5132300010619 /* TabViewPages */ = {
 			isa = PBXGroup;
