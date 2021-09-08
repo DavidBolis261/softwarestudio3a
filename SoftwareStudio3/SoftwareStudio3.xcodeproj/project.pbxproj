@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8050461526E8ECB800D4ACBF /* WelcomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8050461426E8ECB800D4ACBF /* WelcomePageViewController.swift */; };
 		F00A6A4A26DF94470054EF1B /* WorkOutSelection.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00A6A4926DF94470054EF1B /* WorkOutSelection.swift */; };
 		F088C70F26D509D100010619 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F088C70E26D509D100010619 /* AppDelegate.swift */; };
 		F088C71126D509D100010619 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F088C71026D509D100010619 /* SceneDelegate.swift */; };
@@ -23,6 +24,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8050461426E8ECB800D4ACBF /* WelcomePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomePageViewController.swift; sourceTree = "<group>"; };
 		F00A6A4926DF94470054EF1B /* WorkOutSelection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkOutSelection.swift; sourceTree = "<group>"; };
 		F088C70B26D509D100010619 /* SoftwareStudio3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SoftwareStudio3.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F088C70E26D509D100010619 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -76,6 +78,7 @@
 				F088C72726D5132300010619 /* TabViewPages */,
 				F088C72626D512D300010619 /* SignUpIn */,
 				F088C71426D509D100010619 /* Main.storyboard */,
+				8050461426E8ECB800D4ACBF /* WelcomePageViewController.swift */,
 				F088C71726D509D200010619 /* Assets.xcassets */,
 				F088C71926D509D200010619 /* LaunchScreen.storyboard */,
 				F088C71C26D509D200010619 /* Info.plist */,
@@ -183,6 +186,7 @@
 				F088C70F26D509D100010619 /* AppDelegate.swift in Sources */,
 				F088C72326D512BD00010619 /* SignUpPage.swift in Sources */,
 				F088C71126D509D100010619 /* SceneDelegate.swift in Sources */,
+				8050461526E8ECB800D4ACBF /* WelcomePageViewController.swift in Sources */,
 				F088C72526D512CF00010619 /* SignInPage.swift in Sources */,
 				F088C72B26D513E300010619 /* heartPage.swift in Sources */,
 			);
