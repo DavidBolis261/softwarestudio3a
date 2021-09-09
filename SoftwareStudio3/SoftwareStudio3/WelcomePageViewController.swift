@@ -9,11 +9,12 @@ import UIKit
 
 class WelcomePageViewController: UIViewController {
 
-    @IBOutlet weak var GetStartedBtnOutlet: UIButton!
+    
+    @IBOutlet weak var getStartedOutlet: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        GetStartedBtnOutlet.layer.cornerRadius = 7
+        getStartedOutlet.layer.cornerRadius = 7
     }
     
 

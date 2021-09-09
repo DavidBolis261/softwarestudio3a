@@ -18,7 +18,6 @@ class SignInPage: UIViewController {
     }
 	
 	
-	@IBAction func signinTapped(_ sender: Any) {
-	}
+	
 	
 }
