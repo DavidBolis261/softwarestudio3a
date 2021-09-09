@@ -25,8 +25,7 @@ class SignUpPage: UIViewController {
     }
 	
 	
-	@IBAction func signupTapped(_ sender: Any) {
-	}
+	
 	//
 //	@IBAction func signupTapped(_ sender: Any) {
 //		let storyboard = UIStoryboard(name: "Main", bundle: nil)
