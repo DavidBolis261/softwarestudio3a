@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+<<<<<<< Updated upstream
+=======
+		8050461526E8ECB800D4ACBF /* WelcomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8050461426E8ECB800D4ACBF /* WelcomePageViewController.swift */; };
+		80943A2626F221A0003784E3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 80943A2526F2219F003784E3 /* GoogleService-Info.plist */; };
+		9449ECA34423C73BA98B56DF /* Pods_SoftwareStudio3.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11C76CBA91118A459F95A478 /* Pods_SoftwareStudio3.framework */; };
+		F00A6A4A26DF94470054EF1B /* WorkOutSelection.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00A6A4926DF94470054EF1B /* WorkOutSelection.swift */; };
+>>>>>>> Stashed changes
 		F088C70F26D509D100010619 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F088C70E26D509D100010619 /* AppDelegate.swift */; };
 		F088C71126D509D100010619 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F088C71026D509D100010619 /* SceneDelegate.swift */; };
 		F088C71326D509D100010619 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F088C71226D509D100010619 /* ViewController.swift */; };
@@ -19,9 +26,22 @@
 		F088C72B26D513E300010619 /* heartPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F088C72A26D513E300010619 /* heartPage.swift */; };
 		F088C72D26D5140100010619 /* chartPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F088C72C26D5140100010619 /* chartPage.swift */; };
 		F088C72F26D5141500010619 /* personPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F088C72E26D5141500010619 /* personPage.swift */; };
+<<<<<<< Updated upstream
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+=======
+		F0DB5CA726F204C20083AA8F /* WorkOutPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0DB5CA626F204C20083AA8F /* WorkOutPage.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		11C76CBA91118A459F95A478 /* Pods_SoftwareStudio3.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SoftwareStudio3.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		12C5220DDC5E8690E97B02DF /* Pods-SoftwareStudio3.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SoftwareStudio3.release.xcconfig"; path = "Target Support Files/Pods-SoftwareStudio3/Pods-SoftwareStudio3.release.xcconfig"; sourceTree = "<group>"; };
+		15F6803869C2CAC685435ABE /* Pods-SoftwareStudio3.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SoftwareStudio3.debug.xcconfig"; path = "Target Support Files/Pods-SoftwareStudio3/Pods-SoftwareStudio3.debug.xcconfig"; sourceTree = "<group>"; };
+		8050461426E8ECB800D4ACBF /* WelcomePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomePageViewController.swift; sourceTree = "<group>"; };
+		80943A2526F2219F003784E3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		F00A6A4926DF94470054EF1B /* WorkOutSelection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkOutSelection.swift; sourceTree = "<group>"; };
+>>>>>>> Stashed changes
 		F088C70B26D509D100010619 /* SoftwareStudio3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SoftwareStudio3.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F088C70E26D509D100010619 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F088C71026D509D100010619 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -36,6 +56,10 @@
 		F088C72A26D513E300010619 /* heartPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = heartPage.swift; sourceTree = "<group>"; };
 		F088C72C26D5140100010619 /* chartPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = chartPage.swift; sourceTree = "<group>"; };
 		F088C72E26D5141500010619 /* personPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = personPage.swift; sourceTree = "<group>"; };
+<<<<<<< Updated upstream
+=======
+		F0DB5CA626F204C20083AA8F /* WorkOutPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorkOutPage.swift; sourceTree = "<group>"; };
+>>>>>>> Stashed changes
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +101,7 @@
 				F088C71726D509D200010619 /* Assets.xcassets */,
 				F088C71926D509D200010619 /* LaunchScreen.storyboard */,
 				F088C71C26D509D200010619 /* Info.plist */,
+				80943A2526F2219F003784E3 /* GoogleService-Info.plist */,
 			);
 			path = SoftwareStudio3;
 			sourceTree = "<group>";
@@ -159,6 +184,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				F088C71B26D509D200010619 /* LaunchScreen.storyboard in Resources */,
+<<<<<<< Updated upstream
+=======
+				80943A2626F221A0003784E3 /* GoogleService-Info.plist in Resources */,
+>>>>>>> Stashed changes
 				F088C71826D509D200010619 /* Assets.xcassets in Resources */,
 				F088C71626D509D100010619 /* Main.storyboard in Resources */,
 			);
