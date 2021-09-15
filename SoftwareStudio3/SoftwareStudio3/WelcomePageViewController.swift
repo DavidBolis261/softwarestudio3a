@@ -17,6 +17,16 @@ class WelcomePageViewController: UIViewController {
         getStartedOutlet.layer.cornerRadius = 7
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        navigationController?.setNavigationBarHidden(true, animated: animated)
+    }
+
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        navigationController?.setNavigationBarHidden(false, animated: animated)
+    }
+    
 
     /*
     // MARK: - Navigation
