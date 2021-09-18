@@ -25,7 +25,16 @@ class WorkOutSelection: UIViewController {
         mostRecentworkout.layer.cornerRadius = 7
     }
     
-  
-  
-
+    @IBAction func RunningActionBtn(_ sender: Any) {
+        
+    }
+    
+    @IBAction func pushupsActionBtn(_ sender: Any) {
+    }
+    
+    @IBAction func crunchesActionBtn(_ sender: Any) {
+    }
+    @IBAction func pullupsActionBtn(_ sender: Any) {
+    }
+    
 }
