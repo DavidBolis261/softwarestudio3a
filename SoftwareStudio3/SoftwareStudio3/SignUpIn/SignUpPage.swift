@@ -58,7 +58,8 @@ class SignUpPage: UIViewController {
 			password.text?.trimmingCharacters(in: .whitespacesAndNewlines) == "" ||
 			age.text?.trimmingCharacters(in: .whitespacesAndNewlines) == "" ||
 			weight.text?.trimmingCharacters(in: .whitespacesAndNewlines) == "" ||
-			height.text?.trimmingCharacters(in: .whitespacesAndNewlines) == "" {
+			height.text?.trimmingCharacters(in: .whitespacesAndNewlines) == "" ||
+			gender.text?.trimmingCharacters(in: .whitespacesAndNewlines) == "" {
 			
 			return "Please fill in all fields."
 		}
@@ -66,7 +67,7 @@ class SignUpPage: UIViewController {
 		//Check if password is secured
 		let cleanedPassword = password.text!.trimmingCharacters(in: .whitespacesAndNewlines)
 		if isPasswordValid(cleanedPassword) == false {
-			return "Please make sure your password has 6 characters, contains a special character, and a number."
+			return "Please make sure your password is strong."
 		}
 		
 		return nil
@@ -79,28 +80,38 @@ class SignUpPage: UIViewController {
 			//show error message
 			showError(error!)
 		}
+		
+		else {
 		signUP()
 		
 	}
 	
 	func signUP() {
-		Auth.auth().createUser(withEmail: email.text!, password: password.text!) { (authResult, error) in
-//			if error != nil {
-//				self.showError("Error Creating User")
-//			}
-//			else {
-//				let db = Firestore.firestore()
-//
-//				db.collection("Users").addDocument(data: ["FirstName":firstname, "email": email ])
-//			}
-			
-			
-			
-			guard let user = authResult?.user, error == nil else {
-				print("Error \(error?.localizedDescription)")
-				return
+		
+		//Create cleaned version of the data
+		let FirstName = firstname.text!.trimmingCharacters(in: .whitespacesAndNewlines)
+		let LastName = lastname.text!.trimmingCharacters(in: .whitespacesAndNewlines)
+		let EmailAddress = email.text!.trimmingCharacters(in: .whitespacesAndNewlines)
+		let Password = password.text!.trimmingCharacters(in: .whitespacesAndNewlines)
+		let Age = age.text!.trimmingCharacters(in: .whitespacesAndNewlines)
+		let Height = height.text!.trimmingCharacters(in: .whitespacesAndNewlines)
+		let Weight = weight.text!.trimmingCharacters(in: .whitespacesAndNewlines)
+		let Gender = gender.text!.trimmingCharacters(in: .whitespacesAndNewlines)
+
+
+		Auth.auth().createUser(withEmail: EmailAddress, password: Password) { (authResult, error) in
+			if error != nil {
+				self.showError("Error Creating User")
 			}
-			
+			else {
+				let db = Firestore.firestore()
+
+				db.collection("Users").addDocument(data: ["FirstName":FirstName, "LastName":LastName, "Email":EmailAddress, "Password":Password, "Age":Age, "Height":Height, "Weight":Weight, "Gender":Gender, "uid":authResult!.user.uid]) {(error) in
+					if error != nil {
+						self.showError("Error saving user data")
+					}
+				}
+			}
 					let storyboard = UIStoryboard(name: "Main", bundle: nil)
 					let vc = storyboard.instantiateViewController(withIdentifier: "homePage")
 					vc.modalPresentationStyle = .overFullScreen
@@ -108,9 +119,8 @@ class SignUpPage: UIViewController {
 		}
 		
 	}
-	
-	
-
 }
 
 
+
+}
