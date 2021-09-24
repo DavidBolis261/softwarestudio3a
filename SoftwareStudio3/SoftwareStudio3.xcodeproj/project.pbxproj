@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7C1B5E8F26F592D900ACD5BD /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7C1B5E8E26F592D800ACD5BD /* GoogleService-Info.plist */; };
 		8050461526E8ECB800D4ACBF /* WelcomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8050461426E8ECB800D4ACBF /* WelcomePageViewController.swift */; };
 		9449ECA34423C73BA98B56DF /* Pods_SoftwareStudio3.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11C76CBA91118A459F95A478 /* Pods_SoftwareStudio3.framework */; };
 		E081A04226F0A032008D35B8 /* SocialLeaderboardUIViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E081A04126F0A032008D35B8 /* SocialLeaderboardUIViewViewController.swift */; };
@@ -31,6 +32,7 @@
 		11C76CBA91118A459F95A478 /* Pods_SoftwareStudio3.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SoftwareStudio3.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		12C5220DDC5E8690E97B02DF /* Pods-SoftwareStudio3.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SoftwareStudio3.release.xcconfig"; path = "Target Support Files/Pods-SoftwareStudio3/Pods-SoftwareStudio3.release.xcconfig"; sourceTree = "<group>"; };
 		15F6803869C2CAC685435ABE /* Pods-SoftwareStudio3.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SoftwareStudio3.debug.xcconfig"; path = "Target Support Files/Pods-SoftwareStudio3/Pods-SoftwareStudio3.debug.xcconfig"; sourceTree = "<group>"; };
+		7C1B5E8E26F592D800ACD5BD /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		8050461426E8ECB800D4ACBF /* WelcomePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomePageViewController.swift; sourceTree = "<group>"; };
 		E081A04126F0A032008D35B8 /* SocialLeaderboardUIViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialLeaderboardUIViewViewController.swift; sourceTree = "<group>"; };
 		F00A6A4926DF94470054EF1B /* WorkOutSelection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkOutSelection.swift; sourceTree = "<group>"; };
@@ -113,7 +115,11 @@
 				8050461426E8ECB800D4ACBF /* WelcomePageViewController.swift */,
 				F088C71726D509D200010619 /* Assets.xcassets */,
 				F088C71926D509D200010619 /* LaunchScreen.storyboard */,
+
 				F053277026F9B97C00BBC501 /* GoogleService-Info.plist */,
+
+				7C1B5E8E26F592D800ACD5BD /* GoogleService-Info.plist */,
+
 				F088C71C26D509D200010619 /* Info.plist */,
 			);
 			path = SoftwareStudio3;
@@ -202,6 +208,10 @@
 			files = (
 				F053277126F9B97C00BBC501 /* GoogleService-Info.plist in Resources */,
 				F088C71B26D509D200010619 /* LaunchScreen.storyboard in Resources */,
+
+
+				7C1B5E8F26F592D900ACD5BD /* GoogleService-Info.plist in Resources */,
+
 				F088C71826D509D200010619 /* Assets.xcassets in Resources */,
 				F088C71626D509D100010619 /* Main.storyboard in Resources */,
 			);
