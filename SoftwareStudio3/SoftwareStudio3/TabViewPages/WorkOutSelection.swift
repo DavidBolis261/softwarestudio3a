@@ -26,15 +26,26 @@ class WorkOutSelection: UIViewController {
     }
     
     @IBAction func RunningActionBtn(_ sender: Any) {
-        
+        MoveMent(workout: "Running", imageDispay: "Group 1")
     }
     
     @IBAction func pushupsActionBtn(_ sender: Any) {
+        MoveMent(workout: "Pushups", imageDispay: "pushup")
     }
     
     @IBAction func crunchesActionBtn(_ sender: Any) {
+        MoveMent(workout: "Crunches", imageDispay: "Group 3")
     }
     @IBAction func pullupsActionBtn(_ sender: Any) {
+        MoveMent(workout: "PullUps", imageDispay: "Group 2")
+    }
+    
+    func MoveMent(workout: String, imageDispay: String){
+        let vc = storyboard?.instantiateViewController(identifier: "workoutpager") as! WorkOutPage
+        vc.modalPresentationStyle = .formSheet
+        vc.workoutTypeStr = workout
+        vc.imagetoDisplaystr = imageDispay
+        present(vc, animated: false)
     }
     
 }
