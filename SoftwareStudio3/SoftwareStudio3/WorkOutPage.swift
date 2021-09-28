@@ -8,6 +8,13 @@
 import UIKit
 
 class WorkOutPage: UIViewController {
+    var workoutTypeStr = ""
+    var imagetoDisplaystr = ""
+    
+    
+    
+    
+    
     @IBOutlet weak var workoutTypeOut: UILabel!
     @IBOutlet weak var workoutImageOut: UIImageView!
     @IBOutlet weak var caloriesNumOut: UILabel!
@@ -23,6 +30,8 @@ class WorkOutPage: UIViewController {
         super.viewDidLoad()
         ActivityBtnOutlet.layer.cornerRadius = 7
         theinsightViewOut.layer.cornerRadius = 7
+        workoutTypeOut.text = workoutTypeStr
+        workoutImageOut.image = UIImage(named: imagetoDisplaystr)
     }
     
     @IBAction func activityBtnAction(_ sender: Any) {
