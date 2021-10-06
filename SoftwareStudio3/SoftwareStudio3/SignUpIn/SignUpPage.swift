@@ -128,7 +128,7 @@ class SignUpPage: UIViewController, UITextFieldDelegate {
 			else {
 				let db = Firestore.firestore()
 				
-				db.collection("Users").document("\(authResult!.user.uid)").addDocument(data: ["FirstName":FirstName, "LastName":LastName, "Email":EmailAddress, "Password":Password, "Age":Age, "Height":Height, "Weight":Weight, "Gender":Gender, "uid":authResult!.user.uid]) {(error) in
+				db.collection("Users").document("\(authResult!.user.uid)").setData(["FirstName":FirstName, "LastName":LastName, "Email":EmailAddress, "Password":Password, "Age":Age, "Height":Height, "Weight":Weight, "Gender":Gender, "uid":authResult!.user.uid]) {(error) in
 					if error != nil {
 						self.showError("Error saving user data")
 					}

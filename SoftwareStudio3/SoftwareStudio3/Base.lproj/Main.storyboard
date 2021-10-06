@@ -992,7 +992,7 @@
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                             </textView>
                                             <progressView opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFill" semanticContentAttribute="forceRightToLeft" verticalHuggingPriority="750" progress="1" translatesAutoresizingMaskIntoConstraints="NO" id="NKS-ZT-jCH" customClass="SunProgress">
-                                                <rect key="frame" x="32" y="10" width="150" height="4"/>
+                                                <rect key="frame" x="32" y="10.666666666666629" width="150" height="4"/>
                                                 <color key="trackTintColor" red="0.8984288077" green="0.88744289009999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                             </progressView>
                                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Mon" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6p1-7d-a5c" customClass="MonText">
@@ -1003,7 +1003,7 @@
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                             </textView>
                                             <progressView opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFill" semanticContentAttribute="forceRightToLeft" verticalHuggingPriority="750" progress="0.55000000000000004" translatesAutoresizingMaskIntoConstraints="NO" id="Mas-Qo-10Z" customClass="MonProgress">
-                                                <rect key="frame" x="32" y="30" width="150" height="4"/>
+                                                <rect key="frame" x="32" y="30.666666666666629" width="150" height="4"/>
                                                 <color key="trackTintColor" red="0.8984288077" green="0.88744289009999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                             </progressView>
                                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Tue" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JIB-7L-gmf" customClass="TueText">
@@ -1014,7 +1014,7 @@
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                             </textView>
                                             <progressView opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFill" semanticContentAttribute="forceRightToLeft" verticalHuggingPriority="750" progress="0.65000000000000002" translatesAutoresizingMaskIntoConstraints="NO" id="Qdj-NL-Y5f" customClass="TueProgress">
-                                                <rect key="frame" x="32" y="50" width="150" height="4"/>
+                                                <rect key="frame" x="32" y="50.666666666666629" width="150" height="4"/>
                                                 <color key="trackTintColor" red="0.8984288077" green="0.88744289009999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                             </progressView>
                                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Wed" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cHc-Zu-e3F" customClass="WedText">
@@ -1554,7 +1554,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" style="compact" useCurrentDate="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JiQ-Gb-z3D">
-                                        <rect key="frame" x="8" y="38" width="146" height="67"/>
+                                        <rect key="frame" x="8" y="37.999999999999993" width="146" height="67.333333333333314"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="146" id="S5M-CH-jhB"/>
                                         </constraints>
@@ -2180,6 +2180,7 @@
         <image name="person" catalog="system" width="128" height="117"/>
         <image name="person.fill" catalog="system" width="128" height="120"/>
         <image name="pushup" width="159" height="104"/>
+        <image name="pushup (1) 1" width="128" height="128"/>
         <image name="undraw_Activity_tracker_re_2lvv" width="910.9150390625" height="727.46551513671875"/>
         <image name="undraw_finish_line_katerina_limpitsouni_xy20 (1) 1" width="346" height="230"/>
         <image name="undraw_fitness_stats_sht6" width="892.349609375" height="579.10968017578125"/>
