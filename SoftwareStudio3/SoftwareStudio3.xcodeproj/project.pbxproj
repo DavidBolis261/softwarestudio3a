@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		8050461526E8ECB800D4ACBF /* WelcomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8050461426E8ECB800D4ACBF /* WelcomePageViewController.swift */; };
 		9449ECA34423C73BA98B56DF /* Pods_SoftwareStudio3.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11C76CBA91118A459F95A478 /* Pods_SoftwareStudio3.framework */; };
+		E013BC87270E8E5C00C2CFCF /* CaloriesCounter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E013BC86270E8E5C00C2CFCF /* CaloriesCounter.swift */; };
 		E081A04226F0A032008D35B8 /* SocialLeaderboardUIViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E081A04126F0A032008D35B8 /* SocialLeaderboardUIViewViewController.swift */; };
 		F00A6A4A26DF94470054EF1B /* WorkOutSelection.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00A6A4926DF94470054EF1B /* WorkOutSelection.swift */; };
 		F053277126F9B97C00BBC501 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F053277026F9B97C00BBC501 /* GoogleService-Info.plist */; };
@@ -32,6 +33,7 @@
 		12C5220DDC5E8690E97B02DF /* Pods-SoftwareStudio3.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SoftwareStudio3.release.xcconfig"; path = "Target Support Files/Pods-SoftwareStudio3/Pods-SoftwareStudio3.release.xcconfig"; sourceTree = "<group>"; };
 		15F6803869C2CAC685435ABE /* Pods-SoftwareStudio3.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SoftwareStudio3.debug.xcconfig"; path = "Target Support Files/Pods-SoftwareStudio3/Pods-SoftwareStudio3.debug.xcconfig"; sourceTree = "<group>"; };
 		8050461426E8ECB800D4ACBF /* WelcomePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomePageViewController.swift; sourceTree = "<group>"; };
+		E013BC86270E8E5C00C2CFCF /* CaloriesCounter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaloriesCounter.swift; sourceTree = "<group>"; };
 		E081A04126F0A032008D35B8 /* SocialLeaderboardUIViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialLeaderboardUIViewViewController.swift; sourceTree = "<group>"; };
 		F00A6A4926DF94470054EF1B /* WorkOutSelection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkOutSelection.swift; sourceTree = "<group>"; };
 		F0524E47270D81F700A557A8 /* appleWatch.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = appleWatch.storyboard; sourceTree = "<group>"; };
@@ -103,6 +105,7 @@
 		F088C70D26D509D100010619 /* SoftwareStudio3 */ = {
 			isa = PBXGroup;
 			children = (
+				E013BC86270E8E5C00C2CFCF /* CaloriesCounter.swift */,
 				F088C70E26D509D100010619 /* AppDelegate.swift */,
 				F088C71026D509D100010619 /* SceneDelegate.swift */,
 				F088C71226D509D100010619 /* ViewController.swift */,
@@ -258,6 +261,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E013BC87270E8E5C00C2CFCF /* CaloriesCounter.swift in Sources */,
 				F088C72F26D5141500010619 /* personPage.swift in Sources */,
 				F088C71326D509D100010619 /* ViewController.swift in Sources */,
 				F00A6A4A26DF94470054EF1B /* WorkOutSelection.swift in Sources */,
