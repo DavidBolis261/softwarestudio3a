@@ -10,6 +10,10 @@ import Foundation
 import UIKit
 
 class CaloriesInputViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate , UITextFieldDelegate{
+    func numberOfComponents(in pickerView: UIPickerView) -> Int {
+        <#code#>
+    }
+    
     
     //Properties for food input detail
     @IBOutlet weak var foodName: UITextField!
@@ -23,7 +27,7 @@ class CaloriesInputViewController: UIViewController, UIPickerViewDataSource, UIP
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.navigationController?.navigationBarHidden = true
+        self.navigationController?.isNavigationBarHidden = true
         self.pickerView.dataSource = self
         self.pickerView.delegate = self
         
@@ -34,7 +38,7 @@ class CaloriesInputViewController: UIViewController, UIPickerViewDataSource, UIP
     //Function to initialize text fileds to only except numerical values
     func initializeTextFields() {
         caloriesAmount.delegate = self
-        caloriesAmount.keyboardType = UIKeyboardType.NumberPad
+        caloriesAmount.keyboardType = UIKeyboardType.numberPad
     }
 
     override func didReceiveMemoryWarning() {
@@ -45,15 +49,15 @@ class CaloriesInputViewController: UIViewController, UIPickerViewDataSource, UIP
         return 1
     }
     
-    func pickerView(pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
         return pickerDataSource.count;
     }
     
-    func pickerView(pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String! {
+    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String! {
         return pickerDataSource[row]
     }
     
-    func pickerView(pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int)
+    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int)
     {
         if(row == 0)//Brackfast
         {
@@ -76,21 +80,20 @@ class CaloriesInputViewController: UIViewController, UIPickerViewDataSource, UIP
     //Function to fodd details
     @IBAction func addCalories(sender: AnyObject) {
         
-        if(foodName.text.isEmpty || caloriesAmount.text.isEmpty || mealType.isEmpty){
+        if(foodName.text!.isEmpty || ((caloriesAmount.text?.isEmpty) != nil) || mealType.isEmpty){
             //Output an Alert
             var alert = UIAlertView(title: "Data Required", message: "Please enter all required information", delegate: self, cancelButtonTitle: "OK")
             alert.show()
 
         }
         else{
-            //Create a foodLog object in Parse
-            var foodLog = PFObject(className: "foodLog")
+            //Create a foodLog object
+            var foodLog = "foodLog"
             
             //Put user food detail into foodLog
             foodLog["foodName"] = foodName.text
             foodLog["caloriesCount"] = caloriesAmount.text
             foodLog["mealType"] = mealType
-            foodLog["user"] = PFUser.currentUser()!
             
             //Save data
             foodLog.saveInBackground()
@@ -100,7 +103,7 @@ class CaloriesInputViewController: UIViewController, UIPickerViewDataSource, UIP
             alert.show()
             
             //Redirect a user to a log view conroller
-            self.navigationController?.popViewControllerAnimated(true)
+            self.navigationController?.popViewController(animated: true)
 
         }
     }
