@@ -9,6 +9,9 @@ import UIKit
 import Firebase 
 import LocalAuthentication
 
+import Foundation
+import CryptoKit
+
 class SignInPage: UIViewController, UITextFieldDelegate {
 	@IBOutlet var email: UITextField!
 	@IBOutlet var password: UITextField!
@@ -57,9 +60,20 @@ class SignInPage: UIViewController, UITextFieldDelegate {
 			}
 		}
 	}
+	
+	//Ensure this is kept identical to SignUpPage.swift MD5()
+	func MD5(string: String) -> String {
+		let digest = Insecure.MD5.hash(data: string.data(using: .utf8) ?? Data())
+
+		return digest.map {
+			String(format: "%02hhx", $0)
+		}.joined()
+	}
     
     @IBAction func signInButtonAction(_ sender: Any) {
-        signIn(Email: email.text!, Password: password.text!)
+		//Hash the raw-text password
+		let pw = MD5(string: password.text!)
+        signIn(Email: email.text!, Password: pw)
     }
 	func textFieldShouldReturn(_ textField: UITextField) -> Bool {
 		email.resignFirstResponder()
