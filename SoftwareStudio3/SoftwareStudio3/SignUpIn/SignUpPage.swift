@@ -8,6 +8,7 @@
 import UIKit
 import FirebaseAuth
 import Firebase
+import LocalAuthentication
 
 class SignUpPage: UIViewController, UITextFieldDelegate {
 
@@ -134,6 +135,7 @@ class SignUpPage: UIViewController, UITextFieldDelegate {
 					}
 				}
 			}
+                    UserDefaults.standard.set("\(EmailAddress)|\(Password)", forKey: "EmailPID")
 					let storyboard = UIStoryboard(name: "Main", bundle: nil)
 					let vc = storyboard.instantiateViewController(withIdentifier: "mainPage")
 					vc.modalPresentationStyle = .overFullScreen
@@ -141,6 +143,7 @@ class SignUpPage: UIViewController, UITextFieldDelegate {
 		}
 		
 	}
+    
 }
 
 

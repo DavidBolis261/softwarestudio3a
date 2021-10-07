@@ -7,6 +7,7 @@
 
 import UIKit
 import Firebase 
+import LocalAuthentication
 
 class SignInPage: UIViewController, UITextFieldDelegate {
 	@IBOutlet var email: UITextField!
@@ -14,7 +15,7 @@ class SignInPage: UIViewController, UITextFieldDelegate {
 	
     override func viewDidLoad() {
         super.viewDidLoad()
-
+		CheckIFUserLoggedIn()
 		email.delegate = self
 		password.delegate = self
 		let bottomLine = CALayer()
@@ -66,6 +67,32 @@ class SignInPage: UIViewController, UITextFieldDelegate {
 	}
 	override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
 		self.view.endEditing(true)
+	}
+	func CheckIFUserLoggedIn(){
+		let EmailPID = UserDefaults.standard.value(forKey: "EmailPID") as? String
+		var MString = ""
+		var MEmail = ""
+		var MPassword = ""
+		if(EmailPID != nil){
+			MString = EmailPID!
+			let mArray = MString.components(separatedBy: "|")
+			MEmail = mArray[0]
+			MPassword = mArray[1]
+			CallFaceID(UEmail: MEmail, UPassword: MPassword)
+		}
+	}
+	func CallFaceID(UEmail: String, UPassword: String){
+		let context = LAContext()
+		context.localizedCancelTitle = "Log In using Email/Password"
+		context.evaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, localizedReason: "Log In to Your App") { success, error in
+			if success{
+				print("Email: " + UEmail)
+				print("Password: " + UPassword)
+				self.signIn(Email: UEmail, Password: UPassword)
+			} else {
+				print("Error")
+			}
+		}
 	}
 	
 }
