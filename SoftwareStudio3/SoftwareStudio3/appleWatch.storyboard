@@ -61,21 +61,33 @@
         <!--Interface Controller-->
         <scene sceneID="MvA-7b-hgA">
             <objects>
-                <controller id="vAi-h2-zIX"/>
+                <controller id="vAi-h2-zIX">
+                    <items>
+                        <imageView alignment="left" image="Image-5" id="52x-5B-ray"/>
+                    </items>
+                </controller>
             </objects>
             <point key="canvasLocation" x="-174" y="126"/>
         </scene>
         <!--Interface Controller-->
         <scene sceneID="hIL-Sm-rQp">
             <objects>
-                <controller id="aCa-7M-eLT"/>
+                <controller id="aCa-7M-eLT">
+                    <items>
+                        <imageView alignment="left" image="Image-1" id="Yyu-91-eJF"/>
+                    </items>
+                </controller>
             </objects>
             <point key="canvasLocation" x="73" y="126"/>
         </scene>
         <!--Interface Controller-->
         <scene sceneID="7L3-Me-VBw">
             <objects>
-                <controller id="TXc-cG-gM6"/>
+                <controller id="TXc-cG-gM6">
+                    <items>
+                        <imageView alignment="left" image="Image-3" id="Yjv-8F-R8Q"/>
+                    </items>
+                </controller>
             </objects>
             <point key="canvasLocation" x="305" y="126"/>
         </scene>
@@ -95,6 +107,9 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Image-1" width="512" height="468"/>
         <image name="Image-2" width="458" height="406"/>
+        <image name="Image-3" width="512" height="468"/>
+        <image name="Image-5" width="512" height="468"/>
     </resources>
 </document>
