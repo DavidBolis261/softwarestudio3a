@@ -22,6 +22,8 @@ class SignUpPage: UIViewController, UITextFieldDelegate {
 	@IBOutlet var gender: UITextField!
 	@IBOutlet var errorLabel: UILabel!
 	@IBOutlet var signupButton: UIButton!
+	@IBOutlet var calories: UITextField!
+
 	
 	override func viewDidLoad() {
         super.viewDidLoad()
@@ -42,6 +44,7 @@ class SignUpPage: UIViewController, UITextFieldDelegate {
 		weight.delegate = self
 		height.delegate = self
 		gender.delegate = self
+
 
 	}
 	func textFieldShouldReturn(_ textField: UITextField) -> Bool {
@@ -120,6 +123,7 @@ class SignUpPage: UIViewController, UITextFieldDelegate {
 		let Height = height.text!.trimmingCharacters(in: .whitespacesAndNewlines)
 		let Weight = weight.text!.trimmingCharacters(in: .whitespacesAndNewlines)
 		let Gender = gender.text!.trimmingCharacters(in: .whitespacesAndNewlines)
+		let CaloriesBurnt = 0
 
 
 		Auth.auth().createUser(withEmail: EmailAddress, password: Password) { (authResult, error) in
@@ -129,7 +133,7 @@ class SignUpPage: UIViewController, UITextFieldDelegate {
 			else {
 				let db = Firestore.firestore()
 				
-				db.collection("Users").document("\(authResult!.user.uid)").setData(["FirstName":FirstName, "LastName":LastName, "Email":EmailAddress, "Password":Password, "Age":Age, "Height":Height, "Weight":Weight, "Gender":Gender, "uid":authResult!.user.uid]) {(error) in
+				db.collection("Users").document("\(authResult!.user.uid)").setData(["FirstName":FirstName, "LastName":LastName, "Email":EmailAddress, "Password":Password, "Age":Age, "Height":Height, "Weight":Weight, "Gender":Gender, "Calories Burnt":CaloriesBurnt, "uid":authResult!.user.uid]) {(error) in
 					if error != nil {
 						self.showError("Error saving user data")
 					}
