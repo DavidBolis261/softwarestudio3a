@@ -6,10 +6,13 @@
 //
 
 import UIKit
+import Firebase
 
 class LeaderboardUIViewViewController: UIViewController {
     
-    struct User {
+    let db = Firestore.firestore()
+    
+    struct ListItem {
         var name: String
         var caloriesBurnt: Double
         
@@ -19,7 +22,7 @@ class LeaderboardUIViewViewController: UIViewController {
         }
     }
     
-    var sampleData: [User] = [User(name: "Bob", caloriesBurnt: 100.2), User(name: "Jane", caloriesBurnt: 90.2), User(name: "MUSTAFA", caloriesBurnt: 10)]
+    var data: [ListItem] = []
     
     @IBOutlet var table: UITableView!
 
@@ -41,6 +44,25 @@ class LeaderboardUIViewViewController: UIViewController {
         // Do any additional setup after loading the view.
         
         table.dataSource = self
+        
+        db.collection("Users").getDocuments() { (querySnapshot, err) in
+            if let err = err {
+                print("Error getting documents: \(err)")
+            } else {
+                for document in querySnapshot!.documents {
+                    
+                    let firstName = document.get("FirstName") as! String
+                    let lastName = document.get("LastName") as! String
+                    
+                    let name = firstName + " " + lastName
+                    let calories = document.get("CaloriesBurnt") as! Double
+                    
+                    self.data.append(ListItem(name: name, caloriesBurnt: calories))
+                }
+                
+                self.table.reloadData()
+            }
+        }
     }
 
     /*
@@ -60,7 +82,7 @@ extension LeaderboardUIViewViewController: UITableViewDataSource, UITableViewDel
     static let leaderboardListCellIdentifier = "LeaderboardListCell"
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return sampleData.count
+        return data.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -68,7 +90,7 @@ extension LeaderboardUIViewViewController: UITableViewDataSource, UITableViewDel
             fatalError("Unable to deque LeaderboardListCell")
         }
         
-        let user = sampleData[indexPath.row]
+        let user = data[indexPath.row]
         
         cell.nameLabel.text = user.name
         cell.caloriesLabel.text = user.caloriesBurnt.description
