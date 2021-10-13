@@ -45,7 +45,7 @@ class LeaderboardUIViewViewController: UIViewController {
         
         table.dataSource = self
         
-        db.collection("Users").getDocuments() { (querySnapshot, err) in
+        db.collection("Users").order(by: "CaloriesBurnt", descending: true).limit(to: 20).getDocuments() { (querySnapshot, err) in
             if let err = err {
                 print("Error getting documents: \(err)")
             } else {

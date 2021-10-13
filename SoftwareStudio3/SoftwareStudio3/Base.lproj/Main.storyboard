@@ -575,6 +575,13 @@
                                                         <color key="textColor" red="0.16078431369999999" green="0.16862745100000001" blue="0.25098039220000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
+                                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D63-p9-NKR">
+                                                        <rect key="frame" x="4" y="1" width="296" height="105"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <connections>
+                                                            <segue destination="nYd-jD-guh" kind="show" id="WgQ-8o-gQh"/>
+                                                        </connections>
+                                                    </button>
                                                 </subviews>
                                                 <color key="backgroundColor" red="0.79215686269999996" green="0.81176470590000005" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <accessibility key="accessibilityConfiguration">
@@ -903,7 +910,7 @@
             <objects>
                 <viewController title="Leaderboard" id="nYd-jD-guh" customClass="LeaderboardUIViewViewController" customModule="SoftwareStudio3" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="k8m-f9-Evp">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="790"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Leaderboard" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="25" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="g21-Js-eug">
@@ -922,7 +929,7 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4wS-eP-uGo">
-                                <rect key="frame" x="328" y="690" width="30" height="30"/>
+                                <rect key="frame" x="328" y="685" width="30" height="30"/>
                                 <color key="backgroundColor" red="0.89391963340000002" green="0.93203045679999996" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bHX-iF-QoM">
@@ -934,7 +941,7 @@
                                 </state>
                             </button>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="U6W-pe-pVA">
-                                <rect key="frame" x="16" y="258" width="358" height="503"/>
+                                <rect key="frame" x="16" y="253" width="358" height="503"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="503" id="xd5-1E-fia"/>
@@ -992,6 +999,7 @@
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item" image="chart.pie" catalog="system" id="cpy-Mv-FRn"/>
+                    <navigationItem key="navigationItem" id="7ye-rC-EpM"/>
                     <connections>
                         <outlet property="Box4" destination="4wS-eP-uGo" id="DAJ-zo-6CT"/>
                         <outlet property="table" destination="U6W-pe-pVA" id="5Do-fP-rYY"/>
@@ -1163,6 +1171,9 @@
             <point key="canvasLocation" x="155.38461538461539" y="-617.06161137440756"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="WgQ-8o-gQh"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <image name="Group 1" width="142" height="145"/>
         <image name="Group 2" width="63" height="180"/>
