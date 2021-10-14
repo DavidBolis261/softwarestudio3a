@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		8050461526E8ECB800D4ACBF /* WelcomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8050461426E8ECB800D4ACBF /* WelcomePageViewController.swift */; };
 		80B5B91927049E6200862261 /* FacialRecognition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80B5B91827049E6200862261 /* FacialRecognition.swift */; };
+		80D8B2C12717E3DB00E7827C /* SocialMediaShare.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D8B2C02717E3DA00E7827C /* SocialMediaShare.swift */; };
 		9449ECA34423C73BA98B56DF /* Pods_SoftwareStudio3.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11C76CBA91118A459F95A478 /* Pods_SoftwareStudio3.framework */; };
 		E081A04226F0A032008D35B8 /* SocialLeaderboardUIViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E081A04126F0A032008D35B8 /* SocialLeaderboardUIViewViewController.swift */; };
 		F00A6A4A26DF94470054EF1B /* WorkOutSelection.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00A6A4926DF94470054EF1B /* WorkOutSelection.swift */; };
@@ -34,9 +35,9 @@
 		15F6803869C2CAC685435ABE /* Pods-SoftwareStudio3.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SoftwareStudio3.debug.xcconfig"; path = "Target Support Files/Pods-SoftwareStudio3/Pods-SoftwareStudio3.debug.xcconfig"; sourceTree = "<group>"; };
 		8050461426E8ECB800D4ACBF /* WelcomePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomePageViewController.swift; sourceTree = "<group>"; };
 		80B5B91827049E6200862261 /* FacialRecognition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacialRecognition.swift; sourceTree = "<group>"; };
+		80D8B2C02717E3DA00E7827C /* SocialMediaShare.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialMediaShare.swift; sourceTree = "<group>"; };
 		E081A04126F0A032008D35B8 /* SocialLeaderboardUIViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialLeaderboardUIViewViewController.swift; sourceTree = "<group>"; };
 		F00A6A4926DF94470054EF1B /* WorkOutSelection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkOutSelection.swift; sourceTree = "<group>"; };
-		F0524E47270D81F700A557A8 /* appleWatch.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = appleWatch.storyboard; sourceTree = "<group>"; };
 		F053277026F9B97C00BBC501 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../GoogleService-Info.plist"; sourceTree = "<group>"; };
 		F088C70B26D509D100010619 /* SoftwareStudio3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SoftwareStudio3.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F088C70E26D509D100010619 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -84,6 +85,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		80D8B2BF2717DE5B00E7827C /* Recovered References */ = {
+			isa = PBXGroup;
+			children = (
+				80B5B91827049E6200862261 /* FacialRecognition.swift */,
+			);
+			name = "Recovered References";
+			sourceTree = "<group>";
+		};
 		F088C70226D509D100010619 = {
 			isa = PBXGroup;
 			children = (
@@ -91,6 +100,7 @@
 				F088C70C26D509D100010619 /* Products */,
 				0D1EB634AD37DDD7B38FAD4B /* Pods */,
 				213A69C29CA7FFDFE43D253E /* Frameworks */,
+				80D8B2BF2717DE5B00E7827C /* Recovered References */,
 			);
 			sourceTree = "<group>";
 		};
@@ -106,19 +116,18 @@
 			isa = PBXGroup;
 			children = (
 				F088C70E26D509D100010619 /* AppDelegate.swift */,
+				80D8B2C02717E3DA00E7827C /* SocialMediaShare.swift */,
 				F088C71026D509D100010619 /* SceneDelegate.swift */,
 				F088C71226D509D100010619 /* ViewController.swift */,
 				F0DB5CA626F204C20083AA8F /* WorkOutPage.swift */,
 				F088C72726D5132300010619 /* TabViewPages */,
 				F088C72626D512D300010619 /* SignUpIn */,
 				F088C71426D509D100010619 /* Main.storyboard */,
-
 				E081A04126F0A032008D35B8 /* SocialLeaderboardUIViewViewController.swift */,
 				8050461426E8ECB800D4ACBF /* WelcomePageViewController.swift */,
 				F088C71726D509D200010619 /* Assets.xcassets */,
 				F088C71926D509D200010619 /* LaunchScreen.storyboard */,
 				F053277026F9B97C00BBC501 /* GoogleService-Info.plist */,
-
 				F088C71C26D509D200010619 /* Info.plist */,
 			);
 			path = SoftwareStudio3;
@@ -207,7 +216,6 @@
 			files = (
 				F053277126F9B97C00BBC501 /* GoogleService-Info.plist in Resources */,
 				F088C71B26D509D200010619 /* LaunchScreen.storyboard in Resources */,
-
 				F088C71826D509D200010619 /* Assets.xcassets in Resources */,
 				F088C71626D509D100010619 /* Main.storyboard in Resources */,
 			);
@@ -264,6 +272,7 @@
 			files = (
 				F088C72F26D5141500010619 /* personPage.swift in Sources */,
 				F088C71326D509D100010619 /* ViewController.swift in Sources */,
+				80D8B2C12717E3DB00E7827C /* SocialMediaShare.swift in Sources */,
 				F00A6A4A26DF94470054EF1B /* WorkOutSelection.swift in Sources */,
 				F088C72D26D5140100010619 /* chartPage.swift in Sources */,
 				F0DB5CA726F204C20083AA8F /* WorkOutPage.swift in Sources */,
