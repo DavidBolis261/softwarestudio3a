@@ -8,8 +8,9 @@
 import UIKit
 import FirebaseAuth
 import Firebase
+import LocalAuthentication
 
-class SignUpPage: UIViewController {
+class SignUpPage: UIViewController, UITextFieldDelegate {
 
 	@IBOutlet var firstname: UITextField!
 	@IBOutlet var lastname: UITextField!
@@ -21,10 +22,12 @@ class SignUpPage: UIViewController {
 	@IBOutlet var gender: UITextField!
 	@IBOutlet var errorLabel: UILabel!
 	@IBOutlet var signupButton: UIButton!
+	@IBOutlet var calories: UITextField!
+
 	
 	override func viewDidLoad() {
         super.viewDidLoad()
-
+		
         // Do any additional setup after loading the view.
 		
 		setUpElements()
@@ -33,7 +36,29 @@ class SignUpPage: UIViewController {
 	func setUpElements() {
 		//Hide the error label
 		errorLabel.alpha = 0
+		firstname.delegate = self
+		lastname.delegate = self
+		email.delegate = self
+		password.delegate = self
+		age.delegate = self
+		weight.delegate = self
+		height.delegate = self
+		gender.delegate = self
 
+
+	}
+	func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+		lastname.resignFirstResponder()
+		email.resignFirstResponder()
+		password.resignFirstResponder()
+		age.resignFirstResponder()
+		weight.resignFirstResponder()
+		height.resignFirstResponder()
+		gender.resignFirstResponder()
+		return firstname.resignFirstResponder()
+	}
+	override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+		self.view.endEditing(true)
 	}
 	
 	//password validation
@@ -76,12 +101,13 @@ class SignUpPage: UIViewController {
 	@IBAction func signupTapped(_ sender: Any) {
 		let error = validateFields()
 		
-		if error != nil {
-			//show error message
-			showError(error!)
-		}
-		
-		else {
+//		if error != nil {
+//			//show error message
+//			showError(error!)
+//			print(error!)
+//		}
+//
+//		else {
 		signUP()
 		
 	}
@@ -97,6 +123,7 @@ class SignUpPage: UIViewController {
 		let Height = height.text!.trimmingCharacters(in: .whitespacesAndNewlines)
 		let Weight = weight.text!.trimmingCharacters(in: .whitespacesAndNewlines)
 		let Gender = gender.text!.trimmingCharacters(in: .whitespacesAndNewlines)
+		let CaloriesBurnt = 0
 
 
 		Auth.auth().createUser(withEmail: EmailAddress, password: Password) { (authResult, error) in
@@ -105,22 +132,24 @@ class SignUpPage: UIViewController {
 			}
 			else {
 				let db = Firestore.firestore()
-
-				db.collection("Users").addDocument(data: ["FirstName":FirstName, "LastName":LastName, "Email":EmailAddress, "Password":Password, "Age":Age, "Height":Height, "Weight":Weight, "Gender":Gender, "uid":authResult!.user.uid]) {(error) in
+				
+				db.collection("Users").document("\(authResult!.user.uid)").setData(["FirstName":FirstName, "LastName":LastName, "Email":EmailAddress, "Password":Password, "Age":Age, "Height":Height, "Weight":Weight, "Gender":Gender, "Calories Burnt":CaloriesBurnt, "uid":authResult!.user.uid]) {(error) in
 					if error != nil {
 						self.showError("Error saving user data")
 					}
 				}
 			}
+                    UserDefaults.standard.set("\(EmailAddress)|\(Password)", forKey: "EmailPID")
 					let storyboard = UIStoryboard(name: "Main", bundle: nil)
-					let vc = storyboard.instantiateViewController(withIdentifier: "homePage")
+					let vc = storyboard.instantiateViewController(withIdentifier: "mainPage")
 					vc.modalPresentationStyle = .overFullScreen
 					self.present(vc, animated:true)
 		}
 		
 	}
+    
 }
 
 
 
-}
+
