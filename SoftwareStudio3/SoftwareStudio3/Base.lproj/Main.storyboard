@@ -2157,10 +2157,10 @@
                                 <rect key="frame" x="0.0" y="0.0" width="390" height="756"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="undraw_fitness_stats_sht6" translatesAutoresizingMaskIntoConstraints="NO" id="rHa-dg-m9z">
-                                        <rect key="frame" x="0.0" y="0.0" width="390" height="437.66666666666669"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="390" height="457"/>
                                     </imageView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="26" translatesAutoresizingMaskIntoConstraints="NO" id="ZCX-SJ-P8Q">
-                                        <rect key="frame" x="0.0" y="445.66666666666674" width="390" height="283"/>
+                                        <rect key="frame" x="0.0" y="465" width="390" height="283"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Forgot your Password!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gHd-hS-okg">
                                                 <rect key="frame" x="16" y="8" width="358" height="50"/>
@@ -2172,7 +2172,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="4fg-O3-Ztm">
-                                                <rect key="frame" x="16" y="83.999999999999943" width="358" height="115"/>
+                                                <rect key="frame" x="16" y="84" width="358" height="115"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email Address" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fyn-rp-MCg">
                                                         <rect key="frame" x="0.0" y="0.0" width="358" height="50"/>
@@ -2191,7 +2191,7 @@
                                                 </subviews>
                                             </stackView>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jOz-VN-UKN">
-                                                <rect key="frame" x="16" y="224.99999999999994" width="358" height="50"/>
+                                                <rect key="frame" x="16" y="225" width="358" height="50"/>
                                                 <color key="backgroundColor" red="0.32156862749999998" green="0.26274509800000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="50" id="dBl-0k-BdK"/>
@@ -2213,22 +2213,10 @@
                                         <edgeInsets key="layoutMargins" top="8" left="16" bottom="8" right="16"/>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="hJI-F1-Jno">
-                                        <rect key="frame" x="0.0" y="736.66666666666663" width="390" height="19.333333333333371"/>
+                                        <rect key="frame" x="0.0" y="756" width="390" height="0.0"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="9Mb-AZ-hAF">
-                                                <rect key="frame" x="108.66666666666667" y="0.0" width="172.66666666666663" height="19.333333333333332"/>
-                                                <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Forgot Password?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JRb-xg-kFd">
-                                                        <rect key="frame" x="0.0" y="0.0" width="129.66666666666666" height="19.333333333333332"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                                        <nil key="textColor"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wou-v0-SnL">
-                                                        <rect key="frame" x="133.66666666666669" y="0.0" width="39" height="19.333333333333332"/>
-                                                        <state key="normal" title="Reset"/>
-                                                    </button>
-                                                </subviews>
+                                                <rect key="frame" x="170" y="0.0" width="50" height="0.0"/>
                                             </stackView>
                                         </subviews>
                                     </stackView>
@@ -2336,6 +2324,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
+        <segue reference="xyE-Wx-clZ"/>
         <segue reference="xR1-zP-I6u"/>
     </inferredMetricsTieBreakers>
     <resources>
