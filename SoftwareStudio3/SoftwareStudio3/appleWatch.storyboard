@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="18122" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="IGi-cB-aGO">
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="19162" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="IGi-cB-aGO">
     <device id="watch42"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="18022"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="19044"/>
     </dependencies>
     <scenes>
         <!--Activity Statistics-->
@@ -19,7 +19,7 @@
                             <color key="backgroundColor" red="0.792156862745098" green="0.81176470588235294" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             <fontDescription key="font" type="system" weight="semibold" pointSize="15"/>
                             <connections>
-                                <segue destination="aAc-hI-GqK" kind="push" id="G3U-Wd-GMy"/>
+                                <segue destination="pfr-aR-64H" kind="push" id="UyZ-Ub-PD0"/>
                             </connections>
                         </button>
                         <button width="1" alignment="left" title="Pushups" id="Bzq-NR-sSY">
@@ -27,7 +27,7 @@
                             <color key="backgroundColor" red="0.90980392156862744" green="0.91764705882352937" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             <fontDescription key="font" type="system" weight="semibold" pointSize="15"/>
                             <connections>
-                                <segue destination="vAi-h2-zIX" kind="push" id="V50-DA-DXM"/>
+                                <segue destination="UXS-QO-Zpw" kind="push" id="Std-3r-zD8"/>
                             </connections>
                         </button>
                         <button width="1" alignment="left" title="Crunches" id="M0w-MS-WhA">
@@ -105,11 +105,35 @@
             </objects>
             <point key="canvasLocation" x="286" y="-236"/>
         </scene>
+        <!--Interface Controller-->
+        <scene sceneID="eHL-ZP-93j">
+            <objects>
+                <controller id="pfr-aR-64H">
+                    <items>
+                        <imageView alignment="left" image="Picture 1" id="b67-Jt-5zg"/>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="576" y="126"/>
+        </scene>
+        <!--Interface Controller-->
+        <scene sceneID="Z3f-pQ-VEu">
+            <objects>
+                <controller id="UXS-QO-Zpw">
+                    <items>
+                        <imageView alignment="left" image="Picture 2" id="3zG-3W-85Q"/>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="845" y="126"/>
+        </scene>
     </scenes>
     <resources>
         <image name="Image-1" width="512" height="468"/>
         <image name="Image-2" width="458" height="406"/>
         <image name="Image-3" width="512" height="468"/>
         <image name="Image-5" width="512" height="468"/>
+        <image name="Picture 1" width="904" height="842"/>
+        <image name="Picture 2" width="650" height="716"/>
     </resources>
 </document>
