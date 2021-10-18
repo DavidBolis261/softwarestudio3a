@@ -1,0 +1,18 @@
+Notes:
+
+For API Key, please contact David De Angelis directly, as it is not advised to store the API key in the repository... (we should also ensure that the key is stored as an environment variable when it is implemented).
+
+
+We only have API access until 11th November 2021 on the free plan.
+We only have a maximum of 200 API calls per day.
+We only have a maximum of 1000 API calls until 11th November 2021.
+
+FoodAI only classifies food, and as such, does not return any kind of calorific information.
+This is not entirely ideal, however does still classify as ML implementation, and we could ask the user to import the calories manually, (however that is not ideal).
+
+
+An alternative to FoodAI is 'CalorieMama.AI', who have a public & free application on iOS which basically shows off their abilities, this API does in fact return the calorific information, as per the name of the service.
+I am currently in the process of obtaining an API key that is not for commercial purposes, as the API is quite expensive, I have been in contact with them, and hopefully will be able to provide a key relatively soon.
+
+
+

@@ -1,0 +1,13 @@
+Request  `application/json`
+Headers
+	Content-Type: application/json
+Body
+	{
+		"image_url": "http://blog-imgs-24.fc2.com/k/u/i/kuimakuru/20080525_5s.jpg",
+		"num_tag": 10,
+		"qid": 12321,
+ 		"api_key": 1234567890abcdefghijklmnopqrstuvwxyz1234,
+	}
+
+
+//FOR MORE EXAMPLES OF API REQUESTS, SEE https://foodai.org/developer#doc
