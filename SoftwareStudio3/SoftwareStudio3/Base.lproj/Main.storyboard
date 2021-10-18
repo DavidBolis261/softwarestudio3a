@@ -402,6 +402,9 @@
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P4o-y4-1VZ">
                                                         <rect key="frame" x="133.66666666666669" y="0.0" width="39" height="19.333333333333332"/>
                                                         <state key="normal" title="Reset"/>
+                                                        <connections>
+                                                            <segue destination="rCy-bB-FmT" kind="show" id="abx-1k-UCx"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                             </stackView>
@@ -2138,12 +2141,12 @@
             </objects>
             <point key="canvasLocation" x="155.38461538461539" y="-617.06161137440756"/>
         </scene>
-        <!--Sign In Page-->
+        <!--Forgot Pass-->
         <scene sceneID="Bsl-QC-ZWO">
             <objects>
-                <viewController id="rCy-bB-FmT" customClass="SignInPage" customModule="SoftwareStudio3" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="rCy-bB-FmT" customClass="ForgotPass" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="KvH-mb-GmS">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="790"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <userGuides>
                             <userLayoutGuide location="16" affinity="minX"/>
@@ -2151,13 +2154,13 @@
                         </userGuides>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="wUr-jg-Z7N">
-                                <rect key="frame" x="0.0" y="44" width="390" height="766"/>
+                                <rect key="frame" x="0.0" y="0.0" width="390" height="756"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="undraw_fitness_stats_sht6" translatesAutoresizingMaskIntoConstraints="NO" id="rHa-dg-m9z">
-                                        <rect key="frame" x="0.0" y="0.0" width="390" height="447.66666666666669"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="390" height="437.66666666666669"/>
                                     </imageView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="26" translatesAutoresizingMaskIntoConstraints="NO" id="ZCX-SJ-P8Q">
-                                        <rect key="frame" x="0.0" y="455.66666666666674" width="390" height="283"/>
+                                        <rect key="frame" x="0.0" y="445.66666666666674" width="390" height="283"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Forgot your Password!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gHd-hS-okg">
                                                 <rect key="frame" x="16" y="8" width="358" height="50"/>
@@ -2203,13 +2206,14 @@
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
                                                     <action selector="signInButtonAction:" destination="rCy-bB-FmT" eventType="touchUpInside" id="nus-CQ-cc8"/>
+                                                    <segue destination="aE8-9r-AIr" kind="show" id="xyE-Wx-clZ"/>
                                                 </connections>
                                             </button>
                                         </subviews>
                                         <edgeInsets key="layoutMargins" top="8" left="16" bottom="8" right="16"/>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="hJI-F1-Jno">
-                                        <rect key="frame" x="0.0" y="746.66666666666663" width="390" height="19.333333333333371"/>
+                                        <rect key="frame" x="0.0" y="736.66666666666663" width="390" height="19.333333333333371"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="9Mb-AZ-hAF">
                                                 <rect key="frame" x="108.66666666666667" y="0.0" width="172.66666666666663" height="19.333333333333332"/>
@@ -2247,9 +2251,93 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9qU-3m-Ysx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="134" y="1585"/>
+            <point key="canvasLocation" x="134" y="1678"/>
+        </scene>
+        <!--Forgot Pass-->
+        <scene sceneID="65x-9C-Qvx">
+            <objects>
+                <viewController id="aE8-9r-AIr" customClass="ForgotPass" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Arv-MO-tiy">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="790"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <userGuides>
+                            <userLayoutGuide location="16" affinity="minX"/>
+                            <userLayoutGuide location="374" affinity="minX"/>
+                        </userGuides>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="F4c-9D-FiD">
+                                <rect key="frame" x="0.0" y="0.0" width="390" height="756"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="undraw_fitness_stats_sht6" translatesAutoresizingMaskIntoConstraints="NO" id="okI-QR-Ql5">
+                                        <rect key="frame" x="0.0" y="0.0" width="390" height="579"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email Sent!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DRV-qZ-ttZ">
+                                        <rect key="frame" x="0.0" y="587" width="390" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="YJY-fE-xuA"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pVb-9U-8n4">
+                                        <rect key="frame" x="0.0" y="645" width="390" height="50"/>
+                                        <color key="backgroundColor" red="0.32156862749999998" green="0.26274509800000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="Y8g-P2-EWX"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                        <color key="tintColor" red="0.95294117649999999" green="0.97647058819999999" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <state key="normal" title="Login"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <integer key="value" value="20"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="signInButtonAction:" destination="rCy-bB-FmT" eventType="touchUpInside" id="fQx-EX-pSl"/>
+                                            <segue destination="Ktl-XK-Q4c" kind="show" id="xR1-zP-I6u"/>
+                                        </connections>
+                                    </button>
+                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" spacing="26" translatesAutoresizingMaskIntoConstraints="NO" id="8ue-eL-9Ze">
+                                        <rect key="frame" x="0.0" y="703" width="390" height="45"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="b8h-yS-pjb">
+                                                <rect key="frame" x="16" y="8" width="358" height="29"/>
+                                            </stackView>
+                                        </subviews>
+                                        <edgeInsets key="layoutMargins" top="8" left="16" bottom="8" right="16"/>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Po7-RP-DLn">
+                                        <rect key="frame" x="0.0" y="756" width="390" height="0.0"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="TY5-7V-i9w">
+                                                <rect key="frame" x="130.33333333333337" y="0.0" width="129.66666666666663" height="0.0"/>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="bwV-2V-c1T"/>
+                        <color key="backgroundColor" red="0.95294117649999999" green="0.97647058819999999" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="F4c-9D-FiD" firstAttribute="leading" secondItem="bwV-2V-c1T" secondAttribute="leading" id="5XG-HA-DjZ"/>
+                            <constraint firstItem="F4c-9D-FiD" firstAttribute="top" secondItem="bwV-2V-c1T" secondAttribute="top" id="7E7-F9-gyW"/>
+                            <constraint firstItem="bwV-2V-c1T" firstAttribute="bottom" secondItem="F4c-9D-FiD" secondAttribute="bottom" id="KaB-gC-hk7"/>
+                            <constraint firstItem="bwV-2V-c1T" firstAttribute="trailing" secondItem="F4c-9D-FiD" secondAttribute="trailing" id="rOK-bd-NST"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="D9B-aK-pUl"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9GJ-FV-cl9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="134" y="2379"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="xR1-zP-I6u"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <image name="Group 1" width="142" height="145"/>
         <image name="Group 2" width="63" height="180"/>
