@@ -1,0 +1,34 @@
+Required steps to POST to Food Recognition API
+- Crop image to 544x544 px (crop in the center of image)
+- Send with Content-Type multipart/form-data or image/jpeg request to recognition endpoint /v1/foodrecognition
+- Parse JSON recognition results
+
+Example request & response:
+
+Request (cURL command):
+curl -i -F media=@fruit.jpeg "https://api-2445582032290.production.gw.apicast.io/v1/foodrecognition?user_key=<yourApiKey>
+
+OR
+
+curl --request POST -H "Content-Type: image/jpeg" --data-binary "@image.jpeg" https://api-2445582032290.production.gw.apicast.io/v1/foodrecognition?user_key=YOUR KEY HERE
+
+Response (JSON):
+"results": [{
+		"packagedgoods": true,
+		"group": "Packaged Good",
+		"items": [{
+			"nutrition": {
+				"totalCarbs": 0.875,
+				"protein": 0.0125,
+				"calories": 3500,
+				"sodium": 0.003,
+			},
+			"name": "Licorice Candy",
+			"score": 6,
+			"brand": "Good & Plenty",
+			"servingSizes": [{
+				"unit": "33.0 pieces",
+				"servingWeight": 0.04
+			}]
+		}]
+	}]

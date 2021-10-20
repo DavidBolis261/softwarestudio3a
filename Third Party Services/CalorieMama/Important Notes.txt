@@ -1,0 +1,5 @@
+We have got a student/research plan, so please make a conscious effort not to post the api key anywhere on GitHub, ensure it is stored as an env variable on local.
+
+Of which, contact David if required.
+
+Note: Uploaded images must be of type '.jpeg', and have a resolution of 544x544
