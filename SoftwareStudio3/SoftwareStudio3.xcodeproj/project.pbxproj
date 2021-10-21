@@ -24,6 +24,7 @@
 		F088C72B26D513E300010619 /* heartPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F088C72A26D513E300010619 /* heartPage.swift */; };
 		F088C72D26D5140100010619 /* chartPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F088C72C26D5140100010619 /* chartPage.swift */; };
 		F088C72F26D5141500010619 /* personPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F088C72E26D5141500010619 /* personPage.swift */; };
+		F09BE423270E9CE800FEB8B0 /* EditPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F09BE422270E9CE800FEB8B0 /* EditPage.swift */; };
 		F0DB5CA726F204C20083AA8F /* WorkOutPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0DB5CA626F204C20083AA8F /* WorkOutPage.swift */; };
 /* End PBXBuildFile section */
 
@@ -50,6 +51,7 @@
 		F088C72A26D513E300010619 /* heartPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = heartPage.swift; sourceTree = "<group>"; };
 		F088C72C26D5140100010619 /* chartPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = chartPage.swift; sourceTree = "<group>"; };
 		F088C72E26D5141500010619 /* personPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = personPage.swift; sourceTree = "<group>"; };
+		F09BE422270E9CE800FEB8B0 /* EditPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditPage.swift; sourceTree = "<group>"; };
 		F0DB5CA626F204C20083AA8F /* WorkOutPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorkOutPage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -138,6 +140,7 @@
 				F088C72A26D513E300010619 /* heartPage.swift */,
 				F088C72C26D5140100010619 /* chartPage.swift */,
 				F088C72E26D5141500010619 /* personPage.swift */,
+				F09BE422270E9CE800FEB8B0 /* EditPage.swift */,
 				F00A6A4926DF94470054EF1B /* WorkOutSelection.swift */,
 			);
 			path = TabViewPages;
@@ -266,6 +269,7 @@
 				F088C72926D5134D00010619 /* HomePage.swift in Sources */,
 				F088C70F26D509D100010619 /* AppDelegate.swift in Sources */,
 				E081A04226F0A032008D35B8 /* SocialLeaderboardUIViewViewController.swift in Sources */,
+				F09BE423270E9CE800FEB8B0 /* EditPage.swift in Sources */,
 				F088C72326D512BD00010619 /* SignUpPage.swift in Sources */,
 				F088C71126D509D100010619 /* SceneDelegate.swift in Sources */,
 				8050461526E8ECB800D4ACBF /* WelcomePageViewController.swift in Sources */,
