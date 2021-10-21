@@ -403,7 +403,7 @@
                                                         <rect key="frame" x="133.66666666666669" y="0.0" width="39" height="19.333333333333332"/>
                                                         <state key="normal" title="Reset"/>
                                                         <connections>
-                                                            <segue destination="rCy-bB-FmT" kind="show" id="abx-1k-UCx"/>
+                                                            <segue destination="rCy-bB-FmT" kind="presentation" id="zvI-gJ-5Cm"/>
                                                         </connections>
                                                     </button>
                                                 </subviews>
@@ -2205,8 +2205,7 @@
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
-                                                    <action selector="signInButtonAction:" destination="rCy-bB-FmT" eventType="touchUpInside" id="nus-CQ-cc8"/>
-                                                    <segue destination="aE8-9r-AIr" kind="show" id="xyE-Wx-clZ"/>
+                                                    <action selector="ForgotPass:" destination="rCy-bB-FmT" eventType="touchUpInside" id="oQ1-KV-MGr"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -2233,20 +2232,17 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="pL7-Io-a9D"/>
-                    <connections>
-                        <outlet property="email" destination="hwE-3j-ha1" id="Dcp-1C-Y1k"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9qU-3m-Ysx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="134" y="1678"/>
         </scene>
-        <!--Forgot Pass-->
+        <!--Forgot Pass Email Sent-->
         <scene sceneID="65x-9C-Qvx">
             <objects>
-                <viewController id="aE8-9r-AIr" customClass="ForgotPass" sceneMemberID="viewController">
+                <viewController id="aE8-9r-AIr" customClass="ForgotPassEmailSent" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Arv-MO-tiy">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="790"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <userGuides>
                             <userLayoutGuide location="15" affinity="minX"/>
@@ -2254,7 +2250,7 @@
                         </userGuides>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="F4c-9D-FiD">
-                                <rect key="frame" x="0.0" y="0.0" width="390" height="756"/>
+                                <rect key="frame" x="0.0" y="44" width="390" height="766"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="undraw_fitness_stats_sht6" translatesAutoresizingMaskIntoConstraints="NO" id="okI-QR-Ql5">
                                         <rect key="frame" x="0.0" y="0.0" width="390" height="579"/>
@@ -2268,13 +2264,13 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" spacing="26" translatesAutoresizingMaskIntoConstraints="NO" id="8ue-eL-9Ze">
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="26" translatesAutoresizingMaskIntoConstraints="NO" id="8ue-eL-9Ze">
                                         <rect key="frame" x="0.0" y="645" width="390" height="103"/>
                                         <subviews>
-                                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="b8h-yS-pjb">
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="b8h-yS-pjb">
                                                 <rect key="frame" x="16" y="8" width="358" height="11"/>
                                             </stackView>
-                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="he0-rI-35C">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="he0-rI-35C">
                                                 <rect key="frame" x="16" y="45" width="358" height="50"/>
                                                 <color key="backgroundColor" red="0.32156862749999998" green="0.26274509800000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 <constraints>
@@ -2289,22 +2285,27 @@
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
-                                                    <action selector="signInButtonAction:" destination="rCy-bB-FmT" eventType="touchUpInside" id="gyo-1X-PTQ"/>
                                                     <segue destination="Ktl-XK-Q4c" kind="show" id="RlU-UA-fWl"/>
                                                 </connections>
                                             </button>
                                         </subviews>
                                         <edgeInsets key="layoutMargins" top="8" left="16" bottom="8" right="16"/>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Po7-RP-DLn">
-                                        <rect key="frame" x="0.0" y="756" width="390" height="0.0"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Po7-RP-DLn">
+                                        <rect key="frame" x="0.0" y="756" width="390" height="10"/>
                                         <subviews>
-                                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="TY5-7V-i9w">
-                                                <rect key="frame" x="130.33333333333337" y="0.0" width="129.66666666666663" height="0.0"/>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="TY5-7V-i9w">
+                                                <rect key="frame" x="130.33333333333331" y="0.0" width="129.33333333333331" height="10"/>
                                             </stackView>
                                         </subviews>
+                                        <constraints>
+                                            <constraint firstItem="TY5-7V-i9w" firstAttribute="leading" secondItem="Po7-RP-DLn" secondAttribute="leading" constant="130.33333333333337" id="zCF-xt-bMC"/>
+                                        </constraints>
                                     </stackView>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstItem="Po7-RP-DLn" firstAttribute="top" secondItem="F4c-9D-FiD" secondAttribute="top" constant="756" id="aUN-hh-2fu"/>
+                                </constraints>
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="bwV-2V-c1T"/>

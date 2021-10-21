@@ -6,7 +6,8 @@
 //
 
 import UIKit
-import Firebase 
+import Firebase
+import FirebaseAuth
 import LocalAuthentication
 
 class SignInPage: UIViewController, UITextFieldDelegate {
@@ -97,4 +98,17 @@ class SignInPage: UIViewController, UITextFieldDelegate {
 			}
 		}
 	}
+	
+	
+	@IBAction func ForgotPass(_ sender: Any) {
+		Auth.auth().sendPasswordReset(withEmail: email.text!) { (error) in
+						if error != nil{
+							print("Sent!")
+						}else {
+							print("Failed - \(String(describing: error?.localizedDescription))")
+						}
+						
+					}
+			}
+	
 }
