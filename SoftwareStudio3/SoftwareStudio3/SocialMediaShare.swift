@@ -9,13 +9,20 @@ import Foundation
 import UIKit
 
 class viewController: UIViewController {
-   
-    override func viewDidLoad() {
-        super.viewDidLoad()
+    var body: some View {
+    Button(action: actionSheet) {
+    Image(systemName: "square.and.arrow.up")
+        .resizable()
+        .aspectRatio(contentMode: .fit)
+        .frame(width: 36, height: 36)
     }
-    
-    private func PresentShareSheet() {
+        }
+        
+        func actionSheet() {
+            guard let data = URL(string: "https://www.google.com") else { return }
+            let av = UIActivityViewController(activityItems: [data], applicationActivities: nil)
+            UIApplication.shared.windows.first?.rootViewController?.present(av, animated: true, completion: nil)
+        }
     }
-    
-}
+
 
