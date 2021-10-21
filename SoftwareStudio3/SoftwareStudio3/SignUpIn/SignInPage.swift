@@ -68,6 +68,7 @@ class SignInPage: UIViewController, UITextFieldDelegate {
 	override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
 		self.view.endEditing(true)
 	}
+	
 	func CheckIFUserLoggedIn(){
 		let EmailPID = UserDefaults.standard.value(forKey: "EmailPID") as? String
 		var MString = ""
@@ -81,9 +82,11 @@ class SignInPage: UIViewController, UITextFieldDelegate {
 			CallFaceID(UEmail: MEmail, UPassword: MPassword)
 		}
 	}
+	
+	
 	func CallFaceID(UEmail: String, UPassword: String){
 		let context = LAContext()
-		context.localizedCancelTitle = "Log In using Email/Password"
+		context.localizedCancelTitle = "Log In using Email or Password"
 		context.evaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, localizedReason: "Log In to Your App") { success, error in
 			if success{
 				print("Email: " + UEmail)
@@ -94,5 +97,4 @@ class SignInPage: UIViewController, UITextFieldDelegate {
 			}
 		}
 	}
-	
 }
