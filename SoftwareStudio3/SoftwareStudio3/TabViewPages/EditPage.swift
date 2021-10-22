@@ -1,26 +1,39 @@
 //
-//  personPage.swift
+//  EditPage.swift
 //  SoftwareStudio3
 //
-//  Created by David Bolis on 24/8/21.
+//  Created by David Bolis on 7/10/21.
 //
 
 import UIKit
 import Firebase
 
-class personPage: UIViewController {
+class EditPage: UIViewController {
 
-    @IBOutlet weak var UserGender: UITextField!
-    @IBOutlet weak var UserAge: UITextField!
-    @IBOutlet weak var UserHight: UITextField!
-    @IBOutlet weak var UserWeight: UITextField!
-    @IBOutlet weak var FirstNamee: UITextView!
+    @IBOutlet weak var titleText: UITextView!
+    @IBOutlet weak var weightText: UILabel!
+    @IBOutlet weak var heightText: UILabel!
     
+    @IBOutlet weak var ageText: UILabel!
+    
+    @IBOutlet weak var MaleBtnOut: UIButton!
+    
+    @IBOutlet weak var otherBtnOut: UIButton!
+    @IBOutlet weak var femaleBtnOut: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
+        MaleBtnOut.layer.cornerRadius = 7
+        femaleBtnOut.layer.cornerRadius = 7
+        otherBtnOut.layer.cornerRadius = 7
         GetData()
-        
     }
+    
+    @IBAction func sliderAction(_ sender: Any) {
+    }
+    
+    @IBAction func sliderWeightAction(_ sender: Any) {
+    }
+    
     
     func GetData(){
         let db = Firestore.firestore()
@@ -41,17 +54,11 @@ class personPage: UIViewController {
                   
                     let weight = i.get("Weight") as! String
                     DispatchQueue.main.async {
-                        self.FirstNamee.text = "Hi, " + FirstName
-                        self.UserGender.text = "Gender: " + Gender
-                        self.UserAge.text = "Age: " + age
-                        self.UserHight.text = "Hight: " + height
-                        self.UserWeight.text = "Weight: " + weight
+                        self.titleText.text = "\(FirstName) \(lastName)"
+                        
                     }
                 }
             }
         }
     }
-    
-
- 
 }
