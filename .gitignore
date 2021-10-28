@@ -41,3 +41,4 @@ DerivedData/
 
 # Other files to ignore not added by generator
 **/.DS_Store
+.DS_Store
