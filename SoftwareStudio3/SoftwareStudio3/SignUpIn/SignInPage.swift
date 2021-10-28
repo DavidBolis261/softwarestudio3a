@@ -18,7 +18,7 @@ class SignInPage: UIViewController, UITextFieldDelegate {
 	
     override func viewDidLoad() {
         super.viewDidLoad()
-		CheckIFUserLoggedIn()
+		CallFaceID()
 		email.delegate = self
 		password.delegate = self
 		let bottomLine = CALayer()
@@ -93,19 +93,18 @@ class SignInPage: UIViewController, UITextFieldDelegate {
 			let mArray = MString.components(separatedBy: "|")
 			MEmail = mArray[0]
 			MPassword = mArray[1]
-			CallFaceID(UEmail: MEmail, UPassword: MPassword)
+			
 		}
 	}
 	
 	
-	func CallFaceID(UEmail: String, UPassword: String){
+	func CallFaceID(){
 		let context = LAContext()
 		context.localizedCancelTitle = "Log In using Email or Password"
 		context.evaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, localizedReason: "Log In to Your App") { success, error in
 			if success{
-				print("Email: " + UEmail)
-				print("Password: " + UPassword)
-				self.signIn(Email: UEmail, Password: UPassword)
+				
+				self.signIn(Email: "testing@outlook.com", Password: "Qwerty123!")
 			} else {
 				print("Error")
 			}
