@@ -25,6 +25,7 @@
 		F088C72B26D513E300010619 /* heartPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F088C72A26D513E300010619 /* heartPage.swift */; };
 		F088C72D26D5140100010619 /* chartPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F088C72C26D5140100010619 /* chartPage.swift */; };
 		F088C72F26D5141500010619 /* personPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F088C72E26D5141500010619 /* personPage.swift */; };
+		F09BE423270E9CE800FEB8B0 /* EditPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F09BE422270E9CE800FEB8B0 /* EditPage.swift */; };
 		F0DB5CA726F204C20083AA8F /* WorkOutPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0DB5CA626F204C20083AA8F /* WorkOutPage.swift */; };
 /* End PBXBuildFile section */
 
@@ -36,7 +37,6 @@
 		E013BC86270E8E5C00C2CFCF /* CaloriesCounter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaloriesCounter.swift; sourceTree = "<group>"; };
 		E081A04126F0A032008D35B8 /* SocialLeaderboardUIViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialLeaderboardUIViewViewController.swift; sourceTree = "<group>"; };
 		F00A6A4926DF94470054EF1B /* WorkOutSelection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkOutSelection.swift; sourceTree = "<group>"; };
-		F0524E47270D81F700A557A8 /* appleWatch.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = appleWatch.storyboard; sourceTree = "<group>"; };
 		F053277026F9B97C00BBC501 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../GoogleService-Info.plist"; sourceTree = "<group>"; };
 		F088C70B26D509D100010619 /* SoftwareStudio3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SoftwareStudio3.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F088C70E26D509D100010619 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -52,6 +52,7 @@
 		F088C72A26D513E300010619 /* heartPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = heartPage.swift; sourceTree = "<group>"; };
 		F088C72C26D5140100010619 /* chartPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = chartPage.swift; sourceTree = "<group>"; };
 		F088C72E26D5141500010619 /* personPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = personPage.swift; sourceTree = "<group>"; };
+		F09BE422270E9CE800FEB8B0 /* EditPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditPage.swift; sourceTree = "<group>"; };
 		F0DB5CA626F204C20083AA8F /* WorkOutPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorkOutPage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -84,6 +85,13 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		F03D7F2827255CE200D7211F /* Recovered References */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Recovered References";
+			sourceTree = "<group>";
+		};
 		F088C70226D509D100010619 = {
 			isa = PBXGroup;
 			children = (
@@ -91,6 +99,7 @@
 				F088C70C26D509D100010619 /* Products */,
 				0D1EB634AD37DDD7B38FAD4B /* Pods */,
 				213A69C29CA7FFDFE43D253E /* Frameworks */,
+				F03D7F2827255CE200D7211F /* Recovered References */,
 			);
 			sourceTree = "<group>";
 		};
@@ -113,7 +122,6 @@
 				F088C72726D5132300010619 /* TabViewPages */,
 				F088C72626D512D300010619 /* SignUpIn */,
 				F088C71426D509D100010619 /* Main.storyboard */,
-				F0524E47270D81F700A557A8 /* appleWatch.storyboard */,
 				E081A04126F0A032008D35B8 /* SocialLeaderboardUIViewViewController.swift */,
 				8050461426E8ECB800D4ACBF /* WelcomePageViewController.swift */,
 				F088C71726D509D200010619 /* Assets.xcassets */,
@@ -141,6 +149,7 @@
 				F088C72A26D513E300010619 /* heartPage.swift */,
 				F088C72C26D5140100010619 /* chartPage.swift */,
 				F088C72E26D5141500010619 /* personPage.swift */,
+				F09BE422270E9CE800FEB8B0 /* EditPage.swift */,
 				F00A6A4926DF94470054EF1B /* WorkOutSelection.swift */,
 			);
 			path = TabViewPages;
@@ -270,6 +279,7 @@
 				F088C72926D5134D00010619 /* HomePage.swift in Sources */,
 				F088C70F26D509D100010619 /* AppDelegate.swift in Sources */,
 				E081A04226F0A032008D35B8 /* SocialLeaderboardUIViewViewController.swift in Sources */,
+				F09BE423270E9CE800FEB8B0 /* EditPage.swift in Sources */,
 				F088C72326D512BD00010619 /* SignUpPage.swift in Sources */,
 				F088C71126D509D100010619 /* SceneDelegate.swift in Sources */,
 				8050461526E8ECB800D4ACBF /* WelcomePageViewController.swift in Sources */,
