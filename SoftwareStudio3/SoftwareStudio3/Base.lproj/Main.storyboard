@@ -536,9 +536,6 @@
                                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HxD-5u-Tzf">
                                                         <rect key="frame" x="4" y="1" width="296" height="105"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                        <connections>
-                                                            <segue destination="XNW-Qu-fwJ" kind="modal" id="gfo-6t-YAN"/>
-                                                        </connections>
                                                     </button>
                                                 </subviews>
                                                 <color key="backgroundColor" red="0.79215686269999996" green="0.81176470590000005" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -603,12 +600,27 @@
             </objects>
             <point key="canvasLocation" x="1833.8461538461538" y="-379.62085308056868"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="KJ1-tM-wtI">
+            <objects>
+                <viewController id="8Ma-wd-EGp" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="I3C-wg-0Re">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="Hdl-fa-OKi"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="agV-yl-blc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2654" y="-760"/>
+        </scene>
         <!--Food Page-->
         <scene sceneID="2cb-cZ-Q4S">
             <objects>
                 <viewController id="XNW-Qu-fwJ" customClass="FoodPage" customModule="SoftwareStudio3" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="rRq-fU-qWj">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="790"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <userGuides>
                             <userLayoutGuide location="16" affinity="minX"/>
@@ -811,7 +823,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="jAd-2B-Ych">
-                                <rect key="frame" x="16" y="0.0" width="358" height="86"/>
+                                <rect key="frame" x="16" y="44" width="358" height="86"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Food Plan" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OV4-BA-wY6">
                                         <rect key="frame" x="0.0" y="0.0" width="181.66666666666666" height="48"/>
@@ -844,7 +856,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="n8u-m5-t4R" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2663.0769230769229" y="-355.4502369668246"/>
+            <point key="canvasLocation" x="3258" y="325"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="ezj-ee-RYJ">
